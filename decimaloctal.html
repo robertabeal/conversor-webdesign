@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/Logo 4.jpeg">
+    
+</head>
+<body>
+    <nav>
+        <div class="container clearfix">
+            <h1>
+                <a href="/">
+                      <img src="img/Logo 4.jpeg" alt="Meu Logotipo">
+                </a>
+            </h1>
+            <div class="direita" id="botões">
+                <a href="index.html"><button>Início</button></a>
+                <a href="#" id="contraste_preto"><button>Alto Contrate</button></a>
+                <a href="#" onclick="aumentar()"><button>Aumentar</button></a>
+                <a href="#" onclick="diminuir()"><button>Diminuir</button></a> 
+            </div>
+        </div>
+       
+    </nav>
+
+    <header>
+        <div class="container clearfix" id="menu">
+            <a href="decimalbinario.html" id="decimal/binario"><button>Decimal para Binário</button></a>
+            <a href="binariodecimal.html" id="binario/decimal" ><button>Binário para Decimal</button></a>
+            <a href="decimaloctal.html" id="decimal/octal"><button>Decimal para Octal</button></a>
+            <a href="octaldecimal.html" id="octal/decimal"><button>Octal para Decimal</button></a>
+            <a href="decimalhexadecimal.html" id="decimal/hexadecimal"><button>Decimal para Hexadecimal</button></a>
+            <a href="hexadecimaldecimal.html" id="hexadecimal/decimal"><button>Hexadecimal para Decimal</button></a>
+        </div>
+    </header>
+
+
+    <main>
+       
+        <section>
+            <span class="display">Decimal</span>
+            <div>
+                <input type="number" name="number" id="number" value="">
+                <button onclick="converterDecOct()">Converter</button>
+            </div>
+        </section>
+     
+    </main>
+
+
+
+    <footer>
+        <div class="container clearfix center">
+            <p>Conversor</p>
+        </div>
+    </footer>
+    
+
+
+    <script src="js/myscript.js"></script>
+    </body>
+    </html>
